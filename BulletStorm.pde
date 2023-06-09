@@ -1,4 +1,3 @@
-
 //Fonts + Images
 PFont arcade;
 PImage background;
@@ -23,7 +22,7 @@ ArrayList<Platform> platforms = new ArrayList<Platform>();
 HealthBar hb;
 int reloadRate = 0;
 boolean start = true; 
-Level curLvl = new Level(4);
+Level curLvl = new Level(1);
 
 
 int rldRate = 15;
@@ -189,7 +188,9 @@ void startScreen(){
   textAlign(CENTER);
   textSize(150);
   text("Bulletstorm", width/2, height/2 - 150);
+  fill(255,0,0);
   text("PLAY", width/2, height/2);
+  fill(255,255,255);
   textSize(50);
   text("W,A,S,D to move", width/2, height/2 + 100);
   text("LEFT CLICK TO SHOOT", width/2, height/2 + 200);
